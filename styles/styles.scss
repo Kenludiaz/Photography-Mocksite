@@ -1,0 +1,93 @@
+/* 
+==========COLORS========= */
+$black: #333;
+$white: #FDFDFD;
+$gold: #F2B46B;
+$gray: #444;
+
+/* 
+==========FONTS========= */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display:wght@700&display=swap');
+@mixin Lobster {
+    font-family: 'Lobster', cursive;
+}
+@mixin Oswald  {
+    font-family: 'Oswald', sans-serif;;
+}
+@mixin Playfair-Display {
+    font-family: 'Playfair Display', serif;
+}
+/* 
+==========WHOLE========= */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* 
+==========NAV========= */
+@mixin nav-button {
+    height: 3px;
+    width: 32px;
+    border-radius: 10px;
+    background-color: $gold;
+}
+@keyframes scale{
+
+}
+
+.nav-bar {
+    .nav-logo {
+        @include Lobster();
+        text-align: center;
+        font-size: 2.37rem;
+        font-weight: regular;
+        color: $black;
+    }
+    .nav-button {
+        @include nav-button;
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        cursor: pointer;
+        &::after,
+        &::before {
+            @include nav-button;
+            content: " ";
+            display: block;
+            margin: 7px 0;
+        }
+        &::before {
+            margin-top: 9px; 
+        }
+    }
+    .nav-list {
+        margin-top: 10px;
+        display: none;
+        .nav-item {
+            border: 2px solid $gold;
+            border-bottom: 1px;
+            text-indent: 20px;
+            list-style-type: none;
+            &:last-child {
+                border-bottom: 2px solid $gold;
+            }
+            .nav-link {
+                @include Playfair-Display();
+                text-decoration: none;
+                text-transform: none;
+                color: $black;
+                font-size: 1.77rem;
+            }
+        }
+    }
+}
+
+
+/* 
+==========WHOLE========= */
+/* 
+==========WHOLE========= */

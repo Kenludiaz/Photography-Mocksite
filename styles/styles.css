@@ -1,0 +1,81 @@
+/* 
+==========COLORS========= */
+/* 
+==========FONTS========= */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display:wght@700&display=swap");
+/* 
+==========WHOLE========= */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* 
+==========NAV========= */
+@-webkit-keyframes scale {}
+@keyframes scale {}.nav-bar .nav-logo {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 2.37rem;
+  font-weight: regular;
+  color: #333;
+}
+
+.nav-bar .nav-button {
+  height: 3px;
+  width: 32px;
+  border-radius: 10px;
+  background-color: #F2B46B;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.nav-bar .nav-button::after, .nav-bar .nav-button::before {
+  height: 3px;
+  width: 32px;
+  border-radius: 10px;
+  background-color: #F2B46B;
+  content: " ";
+  display: block;
+  margin: 7px 0;
+}
+
+.nav-bar .nav-button::before {
+  margin-top: 9px;
+}
+
+.nav-bar .nav-list {
+  margin-top: 10px;
+  display: none;
+}
+
+.nav-bar .nav-list .nav-item {
+  border: 2px solid #F2B46B;
+  border-bottom: 1px;
+  text-indent: 20px;
+  list-style-type: none;
+}
+
+.nav-bar .nav-list .nav-item:last-child {
+  border-bottom: 2px solid #F2B46B;
+}
+
+.nav-bar .nav-list .nav-item .nav-link {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  text-transform: none;
+  color: #333;
+  font-size: 1.77rem;
+}
+
+/* 
+==========WHOLE========= */
+/* 
+==========WHOLE========= */
+/*# sourceMappingURL=styles.css.map */
