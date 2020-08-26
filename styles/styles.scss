@@ -4,6 +4,7 @@ $black: #333;
 $white: #FDFDFD;
 $gold: #F2B46B;
 $gray: #444;
+$light-cream: #FCF5E2;
 
 /* 
 ==========FONTS========= */
@@ -33,12 +34,12 @@ $gray: #444;
     width: 32px;
     border-radius: 10px;
     background-color: $gold;
+    
 }
-@keyframes scale{
 
-}
 
 .nav-bar {
+    padding-bottom: 1rem;
     .nav-logo {
         @include Lobster();
         text-align: center;
@@ -67,6 +68,8 @@ $gray: #444;
     .nav-list {
         margin-top: 10px;
         display: none;
+        position: fixed;
+        width: 100%;
         .nav-item {
             border: 2px solid $gold;
             border-bottom: 1px;
@@ -88,6 +91,35 @@ $gray: #444;
 
 
 /* 
-==========WHOLE========= */
+==========CONTAINER-1========= */
+.container-1 {
+    max-height: 80%;
+    background-color: $light-cream;
+    display: grid;
+    grid-template-columns: 20px repeat(2, 1fr) 20px;
+    grid-template-rows: repeat(2, 1fr);
+    .portfolio-img {
+        width: 90px;
+        max-width: 30%;
+        border: 2px solid $gold;
+    }
+}
+.portfolio-1 {
+
+    grid-column: 2/4; 
+    grid-row: 1/2;
+}
+.portfolio-2 {
+    grid-column: 3/4; 
+    grid-row: 1/2;
+}
+.portfolio-3 {
+    grid-column: 2/4; 
+    grid-row: 2/3;
+}
+.portfolio-4 {
+    grid-column: 33/4; 
+
+}
 /* 
 ==========WHOLE========= */
