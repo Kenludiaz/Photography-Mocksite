@@ -77,24 +77,25 @@ body {
     }
     .nav-list {
         margin-top: 10px;
-        display: none;
+        display: block;
         position: fixed;
         width: 100%;
-
+        background-color: $white;
+        z-index: 999;
+        padding-bottom: .33rem;
         .nav-item {
-            border: 2px solid $gold;
             border-bottom: 1px;
             text-indent: 20px;
             list-style-type: none;
-            &:last-child {
-                border-bottom: 2px solid $gold;
-            }
             .nav-link {
                 @include Playfair-Display();
                 text-decoration: none;
                 text-transform: none;
                 color: $black;
                 font-size: 1.77rem;
+                &:hover {
+                    
+                }
             }
         }
     }

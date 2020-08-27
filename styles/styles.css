@@ -63,20 +63,18 @@ body {
 
 .nav-bar .nav-list {
   margin-top: 10px;
-  display: none;
+  display: block;
   position: fixed;
   width: 100%;
+  background-color: #FDFDFD;
+  z-index: 999;
+  padding-bottom: .33rem;
 }
 
 .nav-bar .nav-list .nav-item {
-  border: 2px solid #F2B46B;
   border-bottom: 1px;
   text-indent: 20px;
   list-style-type: none;
-}
-
-.nav-bar .nav-list .nav-item:last-child {
-  border-bottom: 2px solid #F2B46B;
 }
 
 .nav-bar .nav-list .nav-item .nav-link {
