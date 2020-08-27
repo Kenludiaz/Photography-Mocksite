@@ -5,7 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display:wght@700&display=swap");
 /* 
 ==========WHOLE========= */
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
@@ -15,7 +17,7 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: #FEEBD8;
+  background-color: #FCF5E2;
 }
 
 /* 
@@ -93,17 +95,15 @@ body {
 ==========CONTAINER-1========= */
 .portfolio-selection {
   background-color: #FCF5E2;
-  padding: 2.37rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(160px 1fr))[3];
-      grid-template-columns: repeat(3, minmax(160px 1fr));
-  -ms-grid-rows: (minmax(120px, 300px))[3];
-      grid-template-rows: repeat(3, minmax(120px, 300px));
-}
-
-.portfolio-selection .portfolio .portfolio-img:hover {
-  opacity: 0.2;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (minmax(160px, auto-fill))[3];
+      grid-template-columns: repeat(3, minmax(160px, auto-fill));
+  -ms-grid-rows: (minmax(120px, 400px))[3];
+      grid-template-rows: repeat(3, minmax(120px, 400px));
 }
 
 .portfolio-selection .portfolio-name {
@@ -218,14 +218,16 @@ body {
 /* 
 ==========EMAIL========= */
 .email-list {
+  padding: 1.77rem 1rem;
   background-color: #E6E0C3;
 }
 
 .email-list .email-list-title {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
-  text-align: center;
   color: #C75353;
+  font-size: 1.77rem;
+  text-align: center;
 }
 
 .email-list .email-list-form > * {
@@ -233,17 +235,33 @@ body {
   margin: .66rem;
 }
 
-.email-list .email-list-from {
-  font-size: 1.77rem;
+.email-list .email-list-form {
+  font-size: 1rem;
 }
 
-.email-list .email-list-from .inputs {
-  padding: 1rem 1.33rem;
-  font-size: 1.77rem;
-}
-
-.email-list .email-list-from .email-selection {
+.email-list .email-list-form .input {
   display: inline-block;
+  padding: 1rem 1.33rem;
+  font-size: 1.33rem;
+}
+
+.email-list .email-list-form .email-selection {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: .77rem;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.email-list .email-list-form .email-list-button {
+  display: block;
+  padding: 1rem 2.34rem;
+  font-size: 1.77rem;
+  background-color: #C75353;
+  color: #FDFDFD;
+  text-transform: uppercase;
+  margin: 2.37rem auto;
+  border-radius: 10px;
 }
 
 .footer {

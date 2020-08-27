@@ -24,7 +24,9 @@ $beige: #E6E0C3;
 }
 /* 
 ==========WHOLE========= */
-* {
+* ,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -32,7 +34,7 @@ $beige: #E6E0C3;
 }
 body {
     @include Oswald();
-    background-color: $light-gold;
+    background-color: $light-cream;
 }
 /* 
 ==========NAV========= */
@@ -107,18 +109,16 @@ body {
 ==========CONTAINER-1========= */
 .portfolio-selection {
     background-color: $light-cream;
-    padding: 2.37rem;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(160px 1fr));
-    grid-template-rows: repeat(3, minmax(120px, 300px));
-    .portfolio {
-        .portfolio-img {
-            &:hover {
-                opacity: 0.2;
-            }
-        }
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: inline-grid;
+    grid-template-columns: repeat(3, minmax(160px, auto-fill));
+    grid-template-rows: repeat(3, minmax(120px, 400px));
+    // .portfolio {
+
         
-    }
+    // }
     .portfolio-name {
         padding: .66rem 1rem;
         text-align: center;
@@ -220,30 +220,49 @@ body {
 ==========EMAIL========= */
 
 .email-list {
-    
+    padding: 1.77rem 1rem;
     background-color: $beige;
     .email-list-title {
         @include Playfair-Display();
         text-transform: uppercase;
-        text-align: center;
         color: $crimson;
+        font-size: 1.77rem;
+        text-align: center;
     }
     .email-list-form > * {
         display: block;
         margin: .66rem;
     }
-    .email-list-from {
-        font-size: 1.77rem;
-        .inputs {
+    .email-list-form {
+        font-size: 1rem;
+        .input {
+            display: inline-block;
             padding: 1rem 1.33rem;
-            font-size: 1.77rem;
+            font-size: 1.33rem;
         }
         .email-selection {
             display: inline-block;
+            margin: 0 1rem;
+            padding: .77rem;
+            font-size: 1rem;
+            border-radius: 6px;
+        }
+        .email-list-button {
+            display: block;
+            padding: 1rem 2.34rem;
+            font-size: 1.77rem;
+            background-color: $crimson;
+            color: $white;
+            text-transform: uppercase;
+            margin: 2.37rem auto;
+            border-radius: 10px;
         }
     }
     
 }
+
+
+
 
 .footer {
     padding: 2.37rem;

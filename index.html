@@ -17,12 +17,13 @@
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
     </nav>
-    <div class="portfolio-selection">
-        <a href="#" class="portfolio portfolio-1"><h3 class="portfolio-name">Nature</h3></a>
-        <a class="portfolio portfolio-2" href="#" title="PETS"><h3 class="portfolio-name">Pets</h3></a>
-        <a href="#" class="portfolio portfolio-3"><h3 class="portfolio-name">Portraits</h3></a>
-        <a href="#" class="portfolio portfolio-4"><h3 class="portfolio-name">Textures</h3></a>
-
+    <div class="container">
+        <div class="portfolio-selection">
+            <a href="#" class="portfolio portfolio-1"><h3 class="portfolio-name">Nature</h3></a>
+            <a class="portfolio portfolio-2" href="#" title="PETS"><h3 class="portfolio-name">Pets</h3></a>
+            <a href="#" class="portfolio portfolio-3"><h3 class="portfolio-name">Portraits</h3></a>
+            <a href="#" class="portfolio portfolio-4"><h3 class="portfolio-name">Textures</h3></a>
+        </div>
     </div>
     <div class="call-to-action">
         <div class="container">
@@ -39,8 +40,8 @@
         <form action="" class="email-list-form">
             <label for="name" class="name-label">Name:</label>
             <input type="text" class="input name-input" required>
-            <label for="label" class="email-label">Email:</label>
-            <input type="text" class="input email-input">
+            <label for="email" class="email-label">Email:</label>
+            <input type="text" class="input email-input" id="email">
             <label for="fav-content-input" class="fav-content">I love your
             <select name="interests" id="" class="email-selection">
                 <option value="Pets">Pets</option>
@@ -50,7 +51,7 @@
             </select>
             collection
         </label>
-            <button type="submit">Join Now</button>
+            <button class="email-list-button" type="submit">Join Now</button>
         </form>
     </div>
 </body>
