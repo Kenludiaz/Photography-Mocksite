@@ -4,11 +4,10 @@ let toggle = false;
 let navList = document.getElementsByClassName("nav-list");
 const displayDropdown = () => {
     toggle = !toggle;
-    if (!toggle) {
-        navList[0].style.display = "none";
+    if (toggle) {
+        navList[0].classList.add("nav-button-toggled");
     }
     else {
-        navList[0].style.display = "block";
+        navList[0].classList.remove("nav-button-toggled");
     }
 }
-navButton.addEventListener(onclick, displayDropdown);

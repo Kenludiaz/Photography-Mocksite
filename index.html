@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography</title>
     <link rel="stylesheet" href="styles/styles.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="nav-bar">
@@ -18,10 +18,11 @@
         </ul>
     </nav>
     <div class="portfolio-selection">
-        <div class="portfolio portfolio-1"><a href="#" class=".portfolio-img portfolio-link-1"><span class="portfolio-name">Nature</span></a></div>
-        <div class="portfolio portfolio-2"><a href="#" class=".portfolio-img portfolio-link-2"><span class="portfolio-name">Pets</span></a></div>
-        <div class="portfolio portfolio-3"><a href="#" class=".portfolio-img portfolio-link-3"><span class="portfolio-name">Portraits</span></a></div>
-        <div class="portfolio portfolio-4"><a href="#" class=".portfolio-img portfolio-link-4"><span class="portfolio-name">Textures</span></a></div>
+        <a href="#" class="portfolio portfolio-1"><h3 class="portfolio-name">Nature</h3></a>
+        <a class="portfolio portfolio-2" href="#" title="PETS"><h3 class="portfolio-name">Pets</h3></a>
+        <a href="#" class="portfolio portfolio-3"><h3 class="portfolio-name">Portraits</h3></a>
+        <a href="#" class="portfolio portfolio-4"><h3 class="portfolio-name">Textures</h3></a>
+
     </div>
     <div class="call-to-action">
         <div class="container">
@@ -37,14 +38,29 @@
         <h2 class="email-list-title">Subscribe to our email list</h2>
         <form action="" class="email-list-form">
             <label for="name" class="name-label">Name:</label>
-            <input type="text" class="inputs name-input" required>
+            <input type="text" class="input name-input" required>
             <label for="label" class="email-label">Email:</label>
-            <input type="text" class="email-input">
-            <label for="fav-content-input" class="fav-content">I love your</label>
-            <select name="" id=""></select>
+            <input type="text" class="input email-input">
+            <label for="fav-content-input" class="fav-content">I love your
+            <select name="interests" id="" class="email-selection">
+                <option value="Pets">Pets</option>
+                <option value="Nature">Nature</option>
+                <option value="Portraits">Portraits</option>
+                <option value="Textures">Textures</option>
+            </select>
+            collection
+        </label>
             <button type="submit">Join Now</button>
         </form>
     </div>
 </body>
+<footer class="footer">
+    Copyright &copy 2020
+    <ul class="icons">
+        <li class="fa-facebook"></li>
+        <li class="fa-twitter"></li>
+        <li class="fa-reddit"></li>
+    </ul>
+</footer>
 </html>
 <script src="scripts/index.js"></script>
