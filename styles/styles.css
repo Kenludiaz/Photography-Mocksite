@@ -216,6 +216,12 @@ body {
 }
 
 /* 
+==========PICTURE========= */
+.extra-info-picture {
+  background-size: contain;
+}
+
+/* 
 ==========EMAIL========= */
 .email-list {
   padding: 1.77rem 1rem;
