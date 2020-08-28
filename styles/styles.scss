@@ -77,8 +77,7 @@ body {
     }
     .nav-list {
         margin-top: 10px;
-        display: block;
-        position: fixed;
+        display: none;
         width: 100%;
         background-color: $white;
         z-index: 999;
@@ -94,7 +93,7 @@ body {
                 color: $black;
                 font-size: 1.77rem;
                 &:hover {
-                    
+                    color: black;
                 }
             }
         }
@@ -217,8 +216,28 @@ body {
 
 /* 
 ==========PICTURE========= */
+.extra-info {
+    background-color: #AAA;
+    height: 10%;
+    width: auto;
+    display: block;
+}
 .extra-info-picture {
-    background-size: contain;
+    mix-blend-mode: multiply;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+}
+.extra-info-text {
+    background-color: $crimson;
+    color: $white;
+    position: relative;
+    bottom: 90px;
+    max-width: 40ch;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px $gray;
+    border-radius: 8px;
 }
 
 
