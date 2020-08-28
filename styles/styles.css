@@ -304,5 +304,31 @@ body {
 
 .footer {
   padding: 2.37rem;
+  color: #333;
+}
+
+.footer .icons {
+  list-style-type: none;
+}
+
+.footer .fa {
+  cursor: pointer;
+  padding: 1.77rem;
+  font-size: 1.77rem;
+}
+
+.footer .fa:hover {
+  opacity: 0.6;
+}
+
+/* 
+==========MEDIA========= */
+@media (max-width: 800px) {
+  nav {
+    background-color: blue;
+  }
+  .nav-button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

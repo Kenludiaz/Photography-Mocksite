@@ -297,4 +297,27 @@ body {
 
 .footer {
     padding: 2.37rem;
+    color: $black;
+    .icons {
+        list-style-type: none;
+    }
+    .fa {
+        cursor: pointer;
+        padding: 1.77rem;
+        font-size: 1.77rem;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+/* 
+==========MEDIA========= */
+@media (max-width: 800px) { 
+    nav {
+        background-color: blue;
+    }
+    .nav-button {
+        display: none;
+    }
 }
