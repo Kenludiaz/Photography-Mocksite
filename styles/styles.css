@@ -99,19 +99,25 @@ body {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  display: -ms-inline-grid;
-  display: inline-grid;
+  padding: 40px 0;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (minmax(160px, auto-fill))[3];
       grid-template-columns: repeat(3, minmax(160px, auto-fill));
-  -ms-grid-rows: (minmax(120px, 400px))[3];
-      grid-template-rows: repeat(3, minmax(120px, 400px));
+  -ms-grid-rows: (minmax(100px, 200px))[3];
+      grid-template-rows: repeat(3, minmax(100px, 200px));
+}
+
+.portfolio-selection .portfolio {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .portfolio-selection .portfolio-name {
   padding: .66rem 1rem;
   text-align: center;
   position: relative;
-  top: 50px;
+  top: 100px;
   left: 0;
   display: inline-block;
   color: #FDFDFD;
@@ -121,16 +127,17 @@ body {
 }
 
 .portfolio-1 {
-  background-image: url(../images/nature.jpg);
+  background-image: url(../images/nature300w.jpg);
   grid-area: top;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   grid-row: span 1;
+  background-position: center;
 }
 
 .portfolio-2 {
-  background-image: url(../images/pets.jpg);
+  background-image: url(../images/pets300w.jpg);
   grid-area: small;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -139,11 +146,11 @@ body {
   -ms-grid-column-span: 1;
   grid-column: 3/4;
   padding: 10px;
-  text-decoration: none;
+  background-position: 50% 25%;
 }
 
 .portfolio-3 {
-  background-image: url(../images/portaits.jpg);
+  background-image: url(../images/portaits400w.jpg);
   grid-area: side;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -152,11 +159,12 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   z-index: 1;
+  background-position: 50% 25%;
 }
 
 .portfolio-4 {
   z-index: 0;
-  background-image: url(../images/textures.jpg);
+  background-image: url(../images/textures400w.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;

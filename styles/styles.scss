@@ -112,18 +112,19 @@ body {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    display: inline-grid;
+    padding: 40px 0; 
+    display: grid;
     grid-template-columns: repeat(3, minmax(160px, auto-fill));
-    grid-template-rows: repeat(3, minmax(120px, 400px));
-    // .portfolio {
-
-        
-    // }
+    grid-template-rows: repeat(3, minmax(100px, 200px));
+    .portfolio {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .portfolio-name {
         padding: .66rem 1rem;
         text-align: center;
         position: relative;
-        top: 50px;
+        top: 100px;
         left: 0;
         display: inline-block;
         color: $white;
@@ -135,33 +136,36 @@ body {
 
 }
 .portfolio-1 {
-    background-image: url(../images/nature.jpg);
+    background-image: url(../images/nature300w.jpg);
     grid-area: top;
     grid-column: 1/4;
     grid-row: span 1;
-    
+    background-position: center;
 }
 .portfolio-2 {
-    background-image: url(../images/pets.jpg);
+    background-image: url(../images/pets300w.jpg);
     grid-area: small;
     grid-row: 3/4;
     grid-column: 3/4;
     padding: 10px;
-    text-decoration: none;
+    background-position: 50% 25%;
+    
 }
 .portfolio-3 {
-    background-image: url(../images/portaits.jpg);
+    background-image: url(../images/portaits400w.jpg);
     grid-area: side;
     grid-column: 2/4;
     grid-row: 2/3;
     z-index: 1;
+    background-position: 50% 25%;
 
 }
 .portfolio-4 {
     z-index: 0;
-    background-image: url(../images/textures.jpg);
+    background-image: url(../images/textures400w.jpg);
     grid-column: 1/3;
     grid-row: 2/4;
+    
     .portfolio-name {
         top: 180px;
     }
