@@ -325,14 +325,27 @@ body {
 ==========MEDIA========= */
 @media (min-width: 1024px) {
   .nav-bar {
-    background-color: green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .nav-button {
-    width: 800px;
+  .nav-bar .nav-logo {
+    display: block;
+    margin-left: 10vw;
+    font-size: 4vw;
+  }
+  .nav-bar .nav-button {
     display: none;
   }
-  .nav-list {
+  .nav-bar .nav-list {
     display: block;
+    text-align: right;
+    margin-right: 10vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .nav-bar .nav-list .nav-item {
+    display: inline-block;
   }
   .call-to-action .container::after {
     content: "";

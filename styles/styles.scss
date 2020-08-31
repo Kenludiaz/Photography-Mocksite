@@ -313,14 +313,24 @@ body {
 ==========MEDIA========= */
 @media (min-width: 1024px) {
     .nav-bar {
-      background-color: green;
-    }
-    .nav-button {
-      width: 800px;
-      display: none;
-    }
-    .nav-list {
-      display: block;
+        display: flex;
+        .nav-logo {
+            display: block;
+            margin-left: 10vw;
+            font-size: 4vw;
+        }
+        .nav-button {
+        display: none;
+        }
+        .nav-list {
+        display: block;
+        text-align: right;
+        margin-right: 10vw;
+        align-self: flex-end;
+        .nav-item {
+            display: inline-block;
+        }
+      }
     }
     .call-to-action {
         .container::after
