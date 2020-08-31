@@ -272,6 +272,10 @@ body {
   background-color: #E6E0C3;
 }
 
+.email-list .container {
+  margin: 0 auto;
+}
+
 .email-list .email-list-title {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
@@ -288,13 +292,15 @@ body {
 
 .email-list .email-list-form {
   font-size: 1rem;
-  padding-left: 35vw;
 }
 
 .email-list .email-list-form .input {
-  display: inline-block;
+  display: block;
+  margin: 1.77rem 0;
   padding: 1rem 1.33rem;
   font-size: 1.33rem;
+  width: 60%;
+  max-width: 600px;
 }
 
 .email-list .email-list-form .email-selection {
@@ -309,10 +315,12 @@ body {
   display: block;
   padding: 1rem 2.34rem;
   font-size: 1.77rem;
+  width: 80%;
+  max-width: 400px;
   background-color: #C75353;
   color: #FDFDFD;
   text-transform: uppercase;
-  margin: 3.14rem;
+  margin: 3.14rem auto;
   border-radius: 10px;
 }
 
@@ -401,6 +409,14 @@ body {
   }
   .extra-info .extra-info-picture {
     background-image: url(../images/waterfall.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .email-list-form .container {
+    width: 60%;
+    max-width: 700px;
+    margin-left: 30vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */
