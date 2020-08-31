@@ -189,13 +189,18 @@ body {
 .call-to-action {
   background-blend-mode: multiply;
   background: rgba(254, 235, 216, 0.6) url(../images/geometric-leaves/geometric-leaves.png) repeat;
-  padding: 1.77rem;
+  padding: 3.14rem 1.77rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .call-to-action .container {
   text-align: left;
   max-width: 70ch;
-  margin: 2.37rem auto;
   padding: 1rem;
   background-color: #FEEBD8;
   border-radius: 10px;
@@ -375,11 +380,24 @@ body {
   .portfolio-4 {
     background-image: url(../images/textures.jpg);
   }
-  .call-to-action .container::after {
-    content: "";
+  .call-to-action .container {
+    z-index: 1;
+  }
+  .call-to-action .container-2 {
+    background-image: url(../images/nature.jpg);
+    width: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .call-to-action .container-2 .container-circle {
+    display: inline-block;
+    height: 400px;
     width: 200px;
-    height: 200px;
-    color: #FCF5E2;
+    background-color: #FEEBD8;
+    border-radius: 60%;
+    margin-left: -100px;
+    z-index: 0;
   }
   .extra-info .extra-info-picture {
     background-image: url(../images/waterfall.jpg);

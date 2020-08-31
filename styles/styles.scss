@@ -182,13 +182,12 @@ body {
 .call-to-action {
     background-blend-mode: multiply;
     background: rgba(254, 235, 216, 0.6) url(../images/geometric-leaves/geometric-leaves.png) repeat;
-    padding: 1.77rem;
-
-
+    padding: 3.14rem 1.77rem;
+    display: flex;
+    justify-content: center;
     .container {
         text-align: left;
         max-width: 70ch;
-        margin: 2.37rem auto;
         padding: 1rem;
         background-color: $cream;
         border-radius: 10px;
@@ -357,15 +356,27 @@ body {
         .portfolio-4 {
             background-image: url(../images/textures.jpg);
         }
-    
     .call-to-action {
-        .container::after {    
-            content: "";
-            width: 200px;
-            height: 200px;
-            color: $light-cream
+        .container {
+            z-index: 1;
         }
+        .container-2 {
+            background-image: url(../images/nature.jpg);
+            width: 40vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
+            .container-circle {
+                display: inline-block;
+                height: 400px;
+                width: 200px;
+                background-color: $cream;
+                border-radius: 60%;
+                margin-left: -100px;
+                z-index: 0;
+            }
+        }
     }
 
     .extra-info {
