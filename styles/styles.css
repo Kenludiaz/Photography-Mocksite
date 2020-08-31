@@ -22,6 +22,29 @@ body {
 
 /* 
 ==========NAV========= */
+@-webkit-keyframes nav-link-bar {
+  0% {
+    width: 0;
+  }
+  75% {
+    width: 110%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes nav-link-bar {
+  0% {
+    width: 0;
+  }
+  75% {
+    width: 110%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .nav-bar {
   background-color: #FDFDFD;
   padding-bottom: 1rem;
@@ -74,9 +97,10 @@ body {
 }
 
 .nav-bar .nav-list .nav-item {
-  border-bottom: 1px;
-  text-indent: 20px;
+  margin-right: 1rem;
   list-style-type: none;
+  padding: 0;
+  text-indent: 1rem;
 }
 
 .nav-bar .nav-list .nav-item .nav-link {
@@ -422,6 +446,32 @@ body {
     width: 60%;
     max-width: 700px;
     margin-left: 30vw;
+  }
+  .nav-bar .nav-list .nav-item {
+    text-indent: 0;
+    margin-right: 2.37rem;
+  }
+  .nav-bar .nav-list .nav-item .nav-link {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    text-transform: none;
+    color: #333;
+    font-size: 1.77rem;
+  }
+  .nav-bar .nav-list .nav-item .nav-link:hover {
+    opacity: .6;
+  }
+  .nav-bar .nav-list .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    width: 0%;
+    background-color: #F2B46B;
+    height: 6px;
+    border-radius: 5px;
+  }
+  .nav-bar .nav-list .nav-item .nav-link:hover::after {
+    -webkit-animation: 400ms nav-link-bar 400ms ease-in-out forwards;
+            animation: 400ms nav-link-bar 400ms ease-in-out forwards;
   }
 }
 /*# sourceMappingURL=styles.css.map */
