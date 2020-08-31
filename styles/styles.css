@@ -311,6 +311,11 @@ body {
   border-radius: 6px;
 }
 
+.email-list .email-list-form .message-label {
+  display: block;
+  margin-top: 3.17rem;
+}
+
 .email-list .email-list-form .email-list-button {
   display: block;
   padding: 1rem 2.34rem;

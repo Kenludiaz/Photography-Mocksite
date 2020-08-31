@@ -43,21 +43,31 @@
     <p class="extra-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sunt ipsam culpa qui voluptatum nihil, illum eos quia dolor soluta reprehenderit earum modi! Ipsum qui inventore accusamus ut quo illo.</p>
     <div class="email-list">
         <h2 class="email-list-title">Subscribe to our email list</h2>
-        <form action="" class="email-list-form">
+        <form action="" method="POST" class="email-list-form">
                 <div class="container">
-                <label for="name" class="label name-label">Name:</label>
-                <input type="text" class="input name-input" required>
-                <label for="email" class="label email-label">Email:</label>
-                <input type="text" class="input email-input" id="email">
-                <label for="fav-content-input" class="fav-content">I love your
-                <select name="interests" id="" class="email-selection">
-                    <option value="Pets">Pets</option>
-                    <option value="Nature">Nature</option>
-                    <option value="Portraits">Portraits</option>
-                    <option value="Textures">Textures</option>
-                </select>
-                collection
-            </label>
+                    <div class="">
+                        <label for="name" class="label name-label">Name:</label>
+                        <input type="text" id="name"class="input name-input" name="user_name" required>
+                    </div>
+                    <div class="">
+                        <label for="email" class="label email-label">Email:</label>
+                        <input type="text" id="email" class="input email-input" id="email" name="user_email" required>
+                    </div>
+                    <div class="">
+                        <label for="fav-content-input" class="fav-content">I love your
+                        <select name="interests" id="fav-content-input" class="email-selection name="user_fav_content">
+                            <option value="Pets">Pets</option> 
+                            <option value="Nature">Nature</option>
+                            <option value="Portraits">Portraits</option>
+                            <option value="Textures">Textures</option>
+                        </select>
+                        collection. 
+                        </label>
+                    </div>
+                    <div class="">
+                        <label for="message" class="label message-label">Feel free to send a message:</label>
+                        <textarea id="message" class="input message-input" name="user_message"></textarea>
+                    </div>
                 </div>
                 <button class="email-list-button" type="submit">Join Now</button>
             
