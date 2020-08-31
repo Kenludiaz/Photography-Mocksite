@@ -273,6 +273,7 @@ body {
   color: #C75353;
   font-size: 1.77rem;
   text-align: center;
+  margin-bottom: 2.37rem;
 }
 
 .email-list .email-list-form > * {
@@ -282,6 +283,7 @@ body {
 
 .email-list .email-list-form {
   font-size: 1rem;
+  padding-left: 35vw;
 }
 
 .email-list .email-list-form .input {
@@ -305,7 +307,7 @@ body {
   background-color: #C75353;
   color: #FDFDFD;
   text-transform: uppercase;
-  margin: 2.37rem auto;
+  margin: 3.14rem;
   border-radius: 10px;
 }
 
@@ -376,6 +378,11 @@ body {
   .call-to-action .container::after {
     content: "";
     width: 200px;
+    height: 200px;
+    color: #FCF5E2;
+  }
+  .extra-info .extra-info-picture {
+    background-image: url(../images/waterfall.jpg);
   }
 }
 /*# sourceMappingURL=styles.css.map */
