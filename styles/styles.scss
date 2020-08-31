@@ -100,7 +100,6 @@ body {
     }
     .nav-list-toggled {
         display: block;
-
     }
 }
 
@@ -177,13 +176,12 @@ body {
 .call-to-action {
     background-blend-mode: multiply;
     background: rgba(254, 235, 216, 0.6) url(../images/geometric-leaves/geometric-leaves.png) repeat;
-
     padding: 1.77rem;
 
 
     .container {
         text-align: left;
-        max-width: 90%;
+        max-width: 70ch;
         margin: 2.37rem auto;
         padding: 1rem;
         background-color: $cream;
@@ -313,11 +311,20 @@ body {
 
 /* 
 ==========MEDIA========= */
-@media (max-width: 800px) { 
-    nav {
-        background-color: blue;
+@media (min-width: 1024px) {
+    .nav-bar {
+      background-color: green;
     }
     .nav-button {
-        display: none;
+      width: 800px;
+      display: none;
     }
-}
+    .nav-list {
+      display: block;
+    }
+    .call-to-action {
+        .container::after
+        {    content: "";
+            width: 200px;}
+    }
+  }

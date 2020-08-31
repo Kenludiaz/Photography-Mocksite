@@ -187,7 +187,7 @@ body {
 
 .call-to-action .container {
   text-align: left;
-  max-width: 90%;
+  max-width: 70ch;
   margin: 2.37rem auto;
   padding: 1rem;
   background-color: #FEEBD8;
@@ -323,12 +323,20 @@ body {
 
 /* 
 ==========MEDIA========= */
-@media (max-width: 800px) {
-  nav {
-    background-color: blue;
+@media (min-width: 1024px) {
+  .nav-bar {
+    background-color: green;
   }
   .nav-button {
+    width: 800px;
     display: none;
+  }
+  .nav-list {
+    display: block;
+  }
+  .call-to-action .container::after {
+    content: "";
+    width: 200px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
