@@ -50,6 +50,9 @@ body {
 .nav-bar {
     background-color: $white;
     padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
     .nav-logo {
         @include Lobster();
         text-align: center;
@@ -93,7 +96,7 @@ body {
                 color: $black;
                 font-size: 1.77rem;
                 &:hover {
-                    color: black;
+                   opacity: .6;
                 }
             }
         }
@@ -114,10 +117,13 @@ body {
     padding: 40px 0; 
     display: grid;
     grid-template-columns: repeat(3, minmax(160px, auto-fill));
-    grid-template-rows: repeat(3, minmax(100px, 200px));
+    grid-template-rows: repeat(3, minmax(100px, 240px));
     .portfolio {
         background-size: cover;
         background-repeat: no-repeat;
+        &:hover {
+            opacity: .6;
+        }
     }
     .portfolio-name {
         padding: .66rem 1rem;
@@ -127,7 +133,7 @@ body {
         left: 0;
         display: inline-block;
         color: $white;
-        background-color: $gold;
+        background-color: $black;
         text-decoration: none;
         border-radius: 7px;
     }
@@ -311,7 +317,7 @@ body {
 
 /* 
 ==========MEDIA========= */
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
     .nav-bar {
         display: flex;
         .nav-logo {
@@ -332,9 +338,27 @@ body {
         }
       }
     }
+    .portfolio-selection {
+        grid-template-rows: repeat(3, minmax(200px, 400px));
+        grid-template-columns: repeat(3, minmax(400px, 450px));
+        margin-bottom: 15vh;
+    }
+        .portfolio-1 {
+            background-image: url(../images/nature.jpg);
+        }
+        .portfolio-2 {
+            background-image: url(../images/pets.jpg);
+        }
+        .portfolio-3 {
+            background-image: url(../images/portaits800w.jpg);
+        }
+        .portfolio-4 {
+            background-image: url(../images/textures.jpg);
+        }
+    
     .call-to-action {
         .container::after
         {    content: "";
             width: 200px;}
     }
-  }
+}

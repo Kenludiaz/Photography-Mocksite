@@ -25,6 +25,9 @@ body {
 .nav-bar {
   background-color: #FDFDFD;
   padding-bottom: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .nav-bar .nav-logo {
@@ -85,7 +88,7 @@ body {
 }
 
 .nav-bar .nav-list .nav-item .nav-link:hover {
-  color: black;
+  opacity: .6;
 }
 
 .nav-bar .nav-list-toggled {
@@ -104,13 +107,17 @@ body {
   display: grid;
   -ms-grid-columns: (minmax(160px, auto-fill))[3];
       grid-template-columns: repeat(3, minmax(160px, auto-fill));
-  -ms-grid-rows: (minmax(100px, 200px))[3];
-      grid-template-rows: repeat(3, minmax(100px, 200px));
+  -ms-grid-rows: (minmax(100px, 240px))[3];
+      grid-template-rows: repeat(3, minmax(100px, 240px));
 }
 
 .portfolio-selection .portfolio {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.portfolio-selection .portfolio:hover {
+  opacity: .6;
 }
 
 .portfolio-selection .portfolio-name {
@@ -121,7 +128,7 @@ body {
   left: 0;
   display: inline-block;
   color: #FDFDFD;
-  background-color: #F2B46B;
+  background-color: #333;
   text-decoration: none;
   border-radius: 7px;
 }
@@ -323,7 +330,7 @@ body {
 
 /* 
 ==========MEDIA========= */
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
   .nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -346,6 +353,25 @@ body {
   }
   .nav-bar .nav-list .nav-item {
     display: inline-block;
+  }
+  .portfolio-selection {
+    -ms-grid-rows: (minmax(200px, 400px))[3];
+        grid-template-rows: repeat(3, minmax(200px, 400px));
+    -ms-grid-columns: (minmax(400px, 450px))[3];
+        grid-template-columns: repeat(3, minmax(400px, 450px));
+    margin-bottom: 15vh;
+  }
+  .portfolio-1 {
+    background-image: url(../images/nature.jpg);
+  }
+  .portfolio-2 {
+    background-image: url(../images/pets.jpg);
+  }
+  .portfolio-3 {
+    background-image: url(../images/portaits800w.jpg);
+  }
+  .portfolio-4 {
+    background-image: url(../images/textures.jpg);
   }
   .call-to-action .container::after {
     content: "";
